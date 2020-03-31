@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/static/styles/main.css" rel="stylesheet">
+</head>
+
+<div class="container" id="top">
+    <h1 style="font-size:20px;"><b>Set - Key Value</b></h1>
+    <form id="post_key_value_pair" action="{{ url_for('set') }}" method="POST">
+        <p>
+            <label for="key">Key:</label>
+            <input type="text" name="key_to_save"/>
+        </p>
+        <p>
+            <label for="value">Value: </label>
+            <input type="text" name="retrieved_value"/>
+        </p>
+        <p><input type="submit" value="submit"/></p>
+    </form>
+</div>
+
+<div class="container" id="bottom">
+    <h1 style="font-size:20px;"><b>Get - Key Value</b></h1>
+    <form action="{{ url_for('get') }}" id="get_key_value_pair" method="POST">
+        <p>
+            <label>Key:</label>
+            <input type="text" name="get_key"/>
+        </p>
+        <p><input type="submit" name="action" value="submit"/></p>
+    </form>
+</div>
+</html>

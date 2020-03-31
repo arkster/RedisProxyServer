@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+{% if key  and value %}
+    <p>Key: {{ key }} Value: {{ value }}</p>
+{% endif %}
+
+
+{% if message %}
+    <p><br><b>{{ message | safe }}</b></p>
+{% endif %}
+</html>
