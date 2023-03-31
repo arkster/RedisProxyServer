@@ -1,5 +1,5 @@
 requests==2.23.0
-redis==3.4.1
+redis==4.4.4
 python-memcached==1.59
 Flask==1.1.1
 Flask-Caching==1.8.0
